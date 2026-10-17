@@ -1,0 +1,8 @@
+{
+  "id": "qa_hang_v1",
+  "name": "QA Timeout Probe",
+  "description": "QA-only intentionally long Node worker, used to validate timeout and sandbox process cleanup",
+  "entry": "javascript",
+  "dependencies": {},
+  "tool": {"name": "qa_hang_probe", "description": "Remain idle until Asterline timeout; QA only", "requireApproval": true}
+}

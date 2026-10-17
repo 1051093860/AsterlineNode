@@ -1,0 +1,8 @@
+{
+  "id": "qa_sandbox_probe",
+  "name": "QA Sandbox Boundary Probe",
+  "description": "QA-only: probe bounded test markers and network endpoints; do not publish in production",
+  "entry": "javascript",
+  "dependencies": {},
+  "tool": {"name": "qa_sandbox_probe", "description": "Check QA sandbox denies access to synthetic fixtures", "requireApproval": true}
+}

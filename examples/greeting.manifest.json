@@ -1,0 +1,8 @@
+{
+  "id": "greeting_v1",
+  "name": "Greeting JS",
+  "description": "A JavaScript plugin that greets the given name.",
+  "entry": "javascript",
+  "dependencies": {},
+  "tool": {"name":"greet_custom","description":"Greet someone from a sandboxed plugin.","requireApproval":true}
+}

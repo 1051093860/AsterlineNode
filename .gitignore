@@ -1,0 +1,36 @@
+.env
+.state-node/
+node_modules/
+*.log
+
+# QA temporary data / diagnostics
+.qa-sandbox-runtime-*/
+.qa-sandbox-bridge-*/
+qa-reports/
+# library cloud sync local contents (may include personal user files)
+library-sync/
+
+# Local credentials and per-machine configuration
+.env.*
+!.env.example
+*.pem
+*.pfx
+*.key
+*.keystore
+*.jks
+
+# Generated files, local backups, received files and binaries
+.qa-fix-backups/
+downloads/
+gotify/data/
+gotify/first-login-password.txt
+gotify/gotify-windows-amd64.exe
+examples/asterline-fs-write-qa-*.txt
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.apk
+*.aab

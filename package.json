@@ -1,0 +1,40 @@
+{
+  "name": "asterline-mcp-node",
+  "version": "1.9.4-preview.1",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.12.0"
+  },
+  "scripts": {
+    "start": "node src/server.ts",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
+    "check": "tsc --noEmit",
+    "smoke": "node scripts/smoke.mjs",
+    "check-env": "node scripts/check-env.mjs",
+    "migrate:python": "node scripts/migrate-python.mjs",
+    "verify:compat": "node scripts/verify-compat.mjs",
+    "check:pwa": "node scripts/check-pwa.mjs",
+    "qa:unit": "node --experimental-strip-types --test scripts/qa/unit.test.mjs",
+    "qa:policy": "node scripts/qa/check-sandbox-policy.mjs",
+    "library": "node scripts/library-cli.mjs",
+    "test:library": "node --test tests/library-bridge.test.mjs",
+    "test:permissions": "node --experimental-strip-types --test tests/permission-center.test.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.3.1",
+    "@modelcontextprotocol/node": "^2.0.0",
+    "@modelcontextprotocol/express": "^2.0.0",
+    "express": "^5.1.0",
+    "jose": "^6.1.0",
+    "zod": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/express": "^5.0.0",
+    "typescript": "^5.9.0"
+  },
+  "bin": {
+    "asterline-library": "./scripts/library-cli.mjs"
+  }
+}

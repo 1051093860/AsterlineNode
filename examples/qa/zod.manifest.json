@@ -1,0 +1,8 @@
+{
+  "id": "qa_zod_v1",
+  "name": "QA Zod Parser",
+  "description": "QA-only: installs a pinned npm package after preflight and approval",
+  "entry": "javascript",
+  "dependencies": {"zod":"4.1.12"},
+  "tool": {"name":"qa_zod_parse","description":"Parse QA-only bounded JSON with zod", "requireApproval":true}
+}
